@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+  <style>
+    .timer {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div id="board">
+    <div class="row">
+      <div class="cell" onclick="makeMove(0, 0)"></div>
+      <div class="cell" onclick="makeMove(0, 1)"></div>
+      <div class="cell" onclick="makeMove(0, 2)"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(1, 0)"></div>
+      <div class="cell" onclick="makeMove(1, 1)"></div>
+      <div class="cell" onclick="makeMove(1, 2)"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="makeMove(2, 0)"></div>
+      <div class="cell" onclick="makeMove(2, 1)"></div>
+      <div class="cell" onclick="makeMove(2, 2)"></div>
+    </div>
+  </div>
+
+  <div class="turn-indicator" id="turn-indicator"></div>
+  <div class="timer" id="timer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
